@@ -8,6 +8,8 @@ def apresentacao_quiz():
 
     if afirmativo == "sim":
         pergunta_um()
+    else:
+        apresentacao_quiz()
 
 def pergunta_um():
 
@@ -27,6 +29,7 @@ def pergunta_um():
     """)
 
     resposta_certa_um = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
+    
 
     if resposta_certa_um == "3":
         print("""
@@ -40,17 +43,15 @@ def pergunta_um():
         print("""
         ________________________
         Você errou! Foi escolhido aposta que o jogador faz sozinho, mas a resposta certa era comunicação entre a dupla.
-        Tente novamente.
         ________________________""")
-        pergunta_um()
+        pergunta_dois()
     elif resposta_certa_um == "1":
         print("""
         ________________________
         Você errou! Foi escolhido ato de compra e venda, mas a resposta certa era comunicação entre a dupla.
-        Tente novamente.
         ________________________
         """)
-        pergunta_um()
+        pergunta_dois()
     else: 
         print("Resposta inválida! Tente novamente.")
         pergunta_um()
@@ -75,7 +76,7 @@ def pergunta_dois():
     if resposta_certa_dois == "1":
         print("""
         ________________________
-        Parabéns, você acertou a questão dois, 13 cartas! Vamos para a próxima pergunta.
+        Parabéns, você acertou a questão dois, são 13 cartas! Vamos para a próxima pergunta.
         ________________________
         """)
         pergunta_tres()
@@ -83,18 +84,16 @@ def pergunta_dois():
         print("""
         ________________________
         Você errou! Foi escolhido 26 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
-        Tente novamente.
         ________________________
                 """)
-        pergunta_dois()
+        pergunta_tres()
     elif resposta_certa_dois == "3":
         print("""
         ________________________
         Você errou! Foi escolhido 52 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
-        Tente novamente.
         ________________________
         """)
-        pergunta_dois()
+        pergunta_tres()
     else: 
         print("Resposta inválida! Tente novamente.")
         pergunta_dois()
@@ -118,25 +117,21 @@ def pergunta_tres():
     if resposta_certa_tres == "2":
         print("""
         ________________________
-        Parabéns, você acertou todas as questões. São chamadas Honras, sabe muito de Bridge ;).
+        Parabéns, você acertou! São chamadas Honras, já sabe um pouco sobre Bridge ;).
         ________________________
         """)
     elif resposta_certa_tres == "1":
         print("""
         ________________________
         Você errou! Você escolheu Trunfos, mas a resposta certa era Honras.
-        Tente novamente.
         ________________________        
                 """)
-        pergunta_tres()
     elif resposta_certa_tres == "3":
         print("""
         ________________________
         Você errou! Você escolheu Vazas, mas a resposta certa era Honras.
-        Tente novamente.
         ________________________
         """)
-        pergunta_tres()
     else: 
         print("Resposta inválida! Tente novamente.")
         pergunta_tres()
