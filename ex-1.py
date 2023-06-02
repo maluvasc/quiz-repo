@@ -12,7 +12,7 @@ def apresentacao_quiz():
 def pergunta_um():
 
     print("""
-    ________________________
+    
     Primeira pergunta:
     O que é um leilão no Bridge?
     
@@ -23,28 +23,42 @@ def pergunta_um():
     3. Leilão é a comunicação entre a dupla de jogadores, onde cada um tenta descrever
     as cartas que possuem na sua mão na linguagem do jogo, para jogar um contrato que esperam 
     vencer.
-    ________________________
+    
     """)
 
     resposta_certa_um = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
 
     if resposta_certa_um == "3":
-        print("""Parabéns, você acertou a questão um! A resposta certa era realmente a alternativa 3, comunicação entre a dupla.
-                Vamos para a próxima pergunta.""")
+        print("""
+        ________________________
+        Parabéns, você acertou a questão um! A resposta certa era realmente a alternativa 3, comunicação entre a dupla.
+        Vamos para a próxima pergunta.
+        ________________________
+        """)
         pergunta_dois()
     elif resposta_certa_um == "2":
-        print("""Você errou! Foi escolhido aposta que o jogador faz sozinho, mas a resposta certa era comunicação entre a dupla.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Foi escolhido aposta que o jogador faz sozinho, mas a resposta certa era comunicação entre a dupla.
+        Tente novamente.
+        ________________________""")
+        pergunta_um()
     elif resposta_certa_um == "1":
-        print("""Você errou! Foi escolhido ato de compra e venda, mas a resposta certa era comunicação entre a dupla.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Foi escolhido ato de compra e venda, mas a resposta certa era comunicação entre a dupla.
+        Tente novamente.
+        ________________________
+        """)
+        pergunta_um()
     else: 
         print("Resposta inválida! Tente novamente.")
+        pergunta_um()
 
 
 def pergunta_dois():
     print("""
-    ________________________
+    
     Segunda pergunta:
     Quantas cartas tem na mão de cada jogador na mesa do Bridge?
     
@@ -53,26 +67,41 @@ def pergunta_dois():
     2. 26
     
     3. 52
-    ________________________
+    
     """)
 
     resposta_certa_dois = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
 
     if resposta_certa_dois == "1":
-        print("Parabéns, você acertou a questão dois, 13 cartas! Vamos para a próxima pergunta.")
+        print("""
+        ________________________
+        Parabéns, você acertou a questão dois, 13 cartas! Vamos para a próxima pergunta.
+        ________________________
+        """)
         pergunta_tres()
     elif resposta_certa_dois == "2":
-        print("""Você errou! Foi escolhido 26 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Foi escolhido 26 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
+        Tente novamente.
+        ________________________
+                """)
+        pergunta_dois()
     elif resposta_certa_dois == "3":
-        print("""Você errou! Foi escolhido 52 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Foi escolhido 52 cartas, mas a resposta certa era a alternativa 1, 13 cartas.
+        Tente novamente.
+        ________________________
+        """)
+        pergunta_dois()
     else: 
         print("Resposta inválida! Tente novamente.")
+        pergunta_dois()
 
 def pergunta_tres():
     print("""
-    ________________________
+    
     Terceira pergunta:
     Como são chamadas as cartas de valores mais altos de cada naipe no Bridge?
     
@@ -81,21 +110,36 @@ def pergunta_tres():
     2. Honras.
     
     3. Vazas.
-    ________________________
+    
      """)
 
     resposta_certa_tres = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
 
     if resposta_certa_tres == "2":
-        print("Parabéns, você acertou todas as questões. São chamadas Honras, sabe muito de Bridge ;).")
+        print("""
+        ________________________
+        Parabéns, você acertou todas as questões. São chamadas Honras, sabe muito de Bridge ;).
+        ________________________
+        """)
     elif resposta_certa_tres == "1":
-        print("""Você errou! Você escolheu Trunfos, mas a resposta certa era Honras.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Você escolheu Trunfos, mas a resposta certa era Honras.
+        Tente novamente.
+        ________________________        
+                """)
+        pergunta_tres()
     elif resposta_certa_tres == "3":
-        print("""Você errou! Você escolheu Vazas, mas a resposta certa era Honras.
-                Tente novamente.""")
+        print("""
+        ________________________
+        Você errou! Você escolheu Vazas, mas a resposta certa era Honras.
+        Tente novamente.
+        ________________________
+        """)
+        pergunta_tres()
     else: 
         print("Resposta inválida! Tente novamente.")
+        pergunta_tres()
 
 
 apresentacao_quiz()
