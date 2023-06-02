@@ -12,16 +12,18 @@ def apresentacao_quiz():
 def pergunta_um():
 
     print("""
+    ________________________
     Primeira pergunta:
     O que é um leilão no Bridge?
-    ________________________
+    
     1. Leilão é o ato de compra e venda de objetos pelo preço de maior valor pronunciado.
-    ________________________
+    
     2. Leilão é uma aposta que o jogador faz sozinho quando sabe que ganhará o contrato sem nenhum problema.
-    ________________________
+    
     3. Leilão é a comunicação entre a dupla de jogadores, onde cada um tenta descrever
     as cartas que possuem na sua mão na linguagem do jogo, para jogar um contrato que esperam 
     vencer.
+    ________________________
     """)
 
     resposta_certa_um = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
@@ -42,14 +44,16 @@ def pergunta_um():
 
 def pergunta_dois():
     print("""
+    ________________________
     Segunda pergunta:
     Quantas cartas tem na mão de cada jogador na mesa do Bridge?
-    ________________________
+    
     1. 13
-    ________________________
+    
     2. 26
-    ________________________
+    
     3. 52
+    ________________________
     """)
 
     resposta_certa_dois = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
@@ -68,14 +72,16 @@ def pergunta_dois():
 
 def pergunta_tres():
     print("""
+    ________________________
     Terceira pergunta:
     Como são chamadas as cartas de valores mais altos de cada naipe no Bridge?
-    ________________________
+    
     1. Trunfos.
-    ________________________
+   
     2. Honras.
-    ________________________
+    
     3. Vazas.
+    ________________________
      """)
 
     resposta_certa_tres = input("Digite aqui a resposta que você considera correta entre 1, 2 e 3: ")
